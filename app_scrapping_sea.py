@@ -24,7 +24,7 @@ PAGES = {
 st.sidebar.title("Application webscrapping - positionnement ")
 
 # Choix de la page
-selection = st.sidebar.radio("Menu", list(PAGES.keys()))
+selection = st.sidebar.radio("Menu", (list(PAGES.keys())),  key=range(0,2))
 page = PAGES[selection]
 page.app()
 
